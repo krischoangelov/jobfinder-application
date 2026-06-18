@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/smart-wallet-application/pom.xml" />
+        <option value="$PROJECT_DIR$/job-finder-application/pom.xml" />
       </list>
     </option>
   </component>

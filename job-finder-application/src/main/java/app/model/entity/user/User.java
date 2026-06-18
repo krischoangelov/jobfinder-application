@@ -1,6 +1,6 @@
 package app.model.entity.user;
 
-import app.model.entity.application.Application;
+import app.model.entity.jobapplication.JobApplication;
 import app.model.entity.joboffer.JobOffer;
 import app.model.entity.skill.Skill;
 import app.model.enums.UserRole;
@@ -43,7 +43,7 @@ public class User {
     private List<JobOffer> createdJobs = new ArrayList<>();
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "owner")
     @OrderBy("appliedAt DESC")
-    private List<Application> applications = new ArrayList<>();
+    private List<JobApplication> jobApplications = new ArrayList<>();
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "owner")
     @OrderBy("acquiredAt DESC")
     private List<Skill> skills = new ArrayList<>();

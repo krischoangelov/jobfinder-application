@@ -1,6 +1,6 @@
 package app.model.entity.joboffer;
 
-import app.model.entity.application.Application;
+import app.model.entity.jobapplication.JobApplication;
 import app.model.entity.user.User;
 import app.model.enums.EmploymentType;
 import jakarta.persistence.*;
@@ -42,5 +42,5 @@ public class JobOffer {
     private User recruiter;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "owner")
     @OrderBy("appliedAt DESC")
-    private List<Application> applications = new ArrayList<>();
+    private List<JobApplication> jobApplications = new ArrayList<>();
 }

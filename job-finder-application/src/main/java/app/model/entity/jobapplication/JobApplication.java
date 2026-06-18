@@ -1,4 +1,4 @@
-package app.model.entity.application;
+package app.model.entity.jobapplication;
 
 import app.model.entity.joboffer.JobOffer;
 import app.model.entity.user.User;
@@ -16,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Entity
 @Table(name = "applications")
-public class Application {
+public class JobApplication {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
